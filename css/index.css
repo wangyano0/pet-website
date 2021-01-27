@@ -1,59 +1,65 @@
-.content{
+.content {
     width: 100%;
     height: 100%;
 }
+
+
 /* 模块一负责同学的样式 */
-#modelOne
-    .part1{
-        display: flex;
-        flex-direction:column;
-        width: 100%;
-    }
-    .part1 .fitstpicture{
-        width:100%;
-    }
-    .part1 .across1{
-        display: flex;
-        flex-direction:row;
-    }
-    .part1 .across1 .text1{
-      margin-left: 2%;
+
+#modelOne .part1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.part1 .fitstpicture {
+    width: 100%;
+}
+
+.part1 .across1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.part1 .across1 .text1 {
+    margin-left: 2%;
     font-size: 14px;
     text-align: left;
     font-family: PingFangSC-regular;
-    
-    }
-    
-    .part1 .across1 .arrow1{
-        margin-right: 10%;
-        width:75px; 
-        right:1px;
-    }
-    
-    .part1 .across2{
-        display: flex;
-        flex-direction:row;
-    }
-    .part1 .across2 .arrow2{
-        
-        width:175px; 
-        left:5px;
-    }
-    .part1 .across2 .text2{
-        top:50px;
+}
+
+.part1 .across1 .arrow1 {
+    margin-right: 10%;
+    width: 75px;
+    right: 1px;
+}
+
+.part1 .across2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.part1 .across2 .arrow2 {
+    width: 175px;
+    left: 5px;
+}
+
+.part1 .across2 .text2 {
+    top: 50px;
     text-align: right;
     margin-right: 50%;
     font-size: 14px;
     font-family: PingFangSC-regular;
-    }
-    .part1 .wheelp .swiper-container .swiper-wrapper .swiper-slide{
-        width:100%; 
-    }
-    
+}
+
+.part1 .wheelp .swiper-container .swiper-wrapper .swiper-slide {
+    width: 100%;
+}
+
 
 /* 模块二负责同学的样式 */
-#modelTwo
-.box{
+
+#modelTwo .box {
     display: flex;
     left: 8px;
     top: 2000px;
@@ -68,105 +74,92 @@
 }
 
 .box img {
-   
     transform: translateY(-90px);
-   margin-left: 70%;
- 
-
+    margin-left: 70%;
 }
 
-.box p1{
-   
+.box p1 {
     text-align: left;
     color: #666666;
     line-height: 50px;
     font-size: 14px;
     line-height: 1.5;
-    
 }
-.box p2{
-   text-align: left;
-    color:black;
+
+.box p2 {
+    text-align: left;
+    color: black;
     line-height: 50px;
     font-size: 14px;
     font-weight: 800;
     line-height: 1.5;
 }
 
-
-.two img{
-    width:70%;
+.two img {
+    width: 70%;
     text-align: left;
-    margin-right:10%;
+    margin-right: 10%;
     transform: translateY(-130px);
 }
 
-.two{
-    height:100px;
+.two {
+    height: 100px;
 }
 
-.three{
-  
-   height: 80px;
+.three {
+    height: 80px;
 }
 
-.three img{
- 
-   margin-right: 300px;
-   
+.three img {
+    margin-right: 300px;
 }
 
-.box1{
+.box1 {
     text-align: right;
     margin-right: 8%;
     height: 560px;
 }
 
-
-.box1 p1{
-   
+.box1 p1 {
     text-align: right;
     color: #666666;
     line-height: 50px;
     font-size: 14px;
     line-height: 1.5;
-    
 }
-.box1 p2{
-   text-align: right;
-    color:black;
+
+.box1 p2 {
+    text-align: right;
+    color: black;
     line-height: 50px;
     font-size: 14px;
     font-weight: 1000;
     line-height: 1.5;
 }
 
-.box1 img{
+.box1 img {
     width: 60%;
     margin-bottom: 20%;
 }
 
-.box2{
+.box2 {
     text-align: left;
     margin-left: 8%;
     width: 100%;
     height: 700px;
 }
 
-
-
-.box2 p1{
-   
+.box2 p1 {
     text-align: left;
     color: #666666;
     line-height: 50px;
     font-size: 14px;
     line-height: 1.5;
-    
 }
-.box2 p2{
-   text-align: left;
-    color:black;
+
+.box2 p2 {
+    text-align: left;
+    color: black;
     line-height: 50px;
     font-size: 14px;
     font-weight: 800;
@@ -175,73 +168,14 @@
 
 
 /* 模块三负责同学的样式 */
-#modelThree
-@media screen and (min-width: 280px) {
-    html {
-      font-size: 18.66666667px;
-    }
-  }
-  @media screen and (min-width: 360px) {
-    html {
-      font-size: 24px;
-    }
-  }
-  @media screen and (min-width: 375px) {
-    html {
-      font-size: 25px;
-    }
-  }
-  @media screen and (min-width: 384px) {
-    html {
-      font-size: 25.6px;
-    }
-  }
-  @media screen and (min-width: 400px) {
-    html {
-      font-size: 26.66666667px;
-    }
-  }
-  @media screen and (min-width: 411px) {
-    html {
-      font-size: 27.4px;
-    }
-  }
-  @media screen and (min-width: 414px) {
-    html {
-      font-size: 27.6px;
-    }
-  }
-  @media screen and (min-width: 480px) {
-    html {
-      font-size: 32px;
-    }
-  }
-  @media screen and (min-width: 540px) {
-    html {
-      font-size: 36px;
-    }
-  }
-  @media screen and (min-width: 720px) {
-    html {
-      font-size: 48px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    html {
-      font-size: 51.2px;
-    }
-  }
-  @media screen and (min-width: 1024px) {
-    html {
-      font-size: 68.26666667px;
-    }
-  }
-  body {
+
+body {
     min-width: 320px;
     margin: 0 auto;
     width: 15rem;
-  }
-  .first {
+}
+
+.first {
     margin-right: 40px;
     margin-bottom: 60px;
     float: right;
@@ -249,8 +183,9 @@
     color: #545454;
     font-size: 14px;
     text-align: right;
-  }
-  .second {
+}
+
+.second {
     margin-right: 5%;
     margin-top: 60px;
     float: right;
@@ -258,8 +193,9 @@
     color: #545454;
     font-size: 14px;
     text-align: right;
-  }
-  .third {
+}
+
+.third {
     margin-left: 30px;
     margin-top: 150px;
     margin-bottom: 60px;
@@ -268,31 +204,34 @@
     color: #545454;
     font-size: 14px;
     text-align: left;
-  }
-  
+}
 
 
 /* 模块7负责同学的样式 */
-#modelSeven{
 
-}
+#modelSeven {}
+
+
 /* 模块8负责同学的样式 */
-#modelEight{
 
-}
+#modelEight {}
+
+
 /* 模块四9负责同学的样式 */
-#modelNine{
 
-}
+#modelNine {}
+
+
 /* 模块10负责同学的样式 */
-#modelTen{
 
-}
+#modelTen {}
+
+
 /* 模块11负责同学的样式 */
-#modelEle{
 
-}
+#modelEle {}
+
+
 /* 模块12负责同学的样式 */
-#modelTwe{
 
-}
+#modelTwe {}
