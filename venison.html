@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Venison cat food</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="r">
+            <img src="./img/return.png" width="16px" height="29px">
+            <img src="./img/title.png" width="591px" height="25px" style="margin-left: 15px;">
+        </div>
+    </div>
+
+    <div class="container" id="app">
+
+        <div class="box1">
+            <div class="firstbox1">
+                <img src="./img/wild.png">
+            </div>
+            <div class="secondbox1">
+                <img src="./img/can.png">
+            </div>
+            <div class="thirdbox1">
+                <img src="./img/amplification.png">
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="firstbox2">
+                <img src="./img/word1.png">
+            </div>
+        </div>
+
+        <el-menu :default-active="activeIndex" mode="horizontal" @select="handleSelect">
+
+            <img src="./img/word2.png" style="float:left;margin-top: 100px;margin-left: 60px">
+
+            <el-submenu index="1" style="margin-top: 100px;margin-left: 60px;">
+
+                <template slot="title"><img src="./img/word3.png" style="height: 100px;float: left;"></template>
+
+                <el-menu-item index="1-1"><img src="./img/menu1.png" style="height: 520px;width:large"></el-menu-item>
+
+            </el-submenu>
+
+
+
+            <el-submenu index="2" style="margin-top: 100px;margin-left: 50px;">
+
+                <template slot="title"><img src="./img/word4.png"style="height:27px;float:left"></template>
+
+                <el-menu-item index="2-1"><img src="./img/menu2.png" style="height: 200px;width:large"></el-menu-item>
+
+            </el-submenu>
+
+
+
+            <el-submenu index="3" style="margin-top: 100px;margin-left: 60px;">
+
+                <template slot="title"><img src="./img/word5.png"style="height:30px;float:left"></template>
+
+                <el-menu-item index="3-1"><img src="./img/menu3.png" style="height: 150px;width:large"></el-menu-item>
+
+            </el-submenu>
+
+        </el-menu>
+
+        <div>
+            <img src="./img/bottom.png" style="margin-top: 100px;">
+        </div>
+
+
+    </div>
+
+</body>
+
+<!-- import Vue before Element -->
+
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+<!-- import JavaScript -->
+
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<script>
+    new Vue({
+
+        el: '#app',
+
+        data: function() {
+
+            return {
+                visible: false
+            }
+
+        }
+
+    })
+</script>
+
+</html>
