@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+body{
+    width:375px;
+    height:812px;
+}
+.company2{
+    display: flex;
+    flex-direction:column;
+    
+}
+.company2 .op1{
+   width: 375px;
+}
+
+.company2 .cp2{
+    width: 375px;
+ }
