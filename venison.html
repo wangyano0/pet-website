@@ -50,7 +50,7 @@
                             <img src="./img/word3.png">
                         </td>
                         <td>
-                            <div id="btn1"><img src="./img/arrow.png" style="margin-left: 160px;"></div>
+                            <div id="btn1"><img src="./img/arrow.png" style="margin-left: 140px;"></div>
                         </td>
                     </tr>
                 </table>
@@ -110,6 +110,24 @@
         $("#btn3").click(function() {
             $("#menu3").toggle();
         });
+    })
+
+    var num = 0;
+    var num1 = 0;
+    var num2 = 0;
+
+    $(document).on("click", "#btn1", function() {
+        num = (num + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num + "deg)"); //三角形旋转
+
+    })
+    $(document).on("click", "#btn2", function() {
+        num1 = (num1 + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num1 + "deg)"); //三角形旋转
+    })
+    $(document).on("click", "#btn3", function() {
+        num2 = (num2 + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num2 + "deg)"); //三角形旋转      
     })
 </script>
 
