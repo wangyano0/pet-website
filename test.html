@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/jquery.min.js"></script>
+</head>
+<body>
+    <button id="btn">测试点击隐藏和显示</button>
+    <div class="toggle">
+        测试 我是隐藏还是显示
+    </div>
+</body>
+<script>
+    $(function(){
+        $('#btn').click(function(){
+            $(".toggle").toggle();
+        })
+        
+    })
+</script>
+</html>
