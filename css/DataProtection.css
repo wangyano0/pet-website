@@ -1,0 +1,30 @@
+.DPtext{
+    width: 329px;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.DPtext p1{
+    left: 26px;
+    top: 169px;
+    width: 329px;
+    height: 5481px;
+    color: #7b7b7b;
+    font-size: 14px;
+    text-align: left;
+    font-family: PingFangSC-bold;
+    
+}
+
+.DPtext p2{
+    left: 26px;
+    top: 169px;
+    width: 329px;
+    height: 5481px;
+    color: #444444;
+    font-size: 14px;
+    text-align: left;
+    font-family: PingFangSC-bold;
+    font-weight: 600;
+    
+}
