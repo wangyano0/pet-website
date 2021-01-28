@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/venison.css">
     <title>Venison cat food</title>
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 
 </head>
 
@@ -39,70 +38,78 @@
             </div>
         </div>
 
-        <el-menu :default-active="activeIndex" mode="horizontal" @select="handleSelect">
+        <div class="box3">
+            <div class="firstbox3">
+                <img src="./img/word2.png">
 
-            <img src="./img/word2.png" style="float:left;margin-top: 100px;margin-left: 60px">
+            </div>
+            <div class="secondbox3">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./img/word3.png">
+                        </td>
+                        <td>
+                            <div id="btn1"><img src="./img/arrow.png" style="margin-left: 160px;"></div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="menu1">
+                    <img src="./img/menu1.png" style="margin-top: 100px;">
+                </div>
+            </div>
 
-            <el-submenu index="1" style="margin-top: 100px;margin-left: 60px;">
-
-                <template slot="title"><img src="./img/word3.png" style="height: 100px;float: left;"></template>
-
-                <el-menu-item index="1-1"><img src="./img/menu1.png" style="height: 520px;width:large"></el-menu-item>
-
-            </el-submenu>
-
-
-
-            <el-submenu index="2" style="margin-top: 100px;margin-left: 50px;">
-
-                <template slot="title"><img src="./img/word4.png"style="height:27px;float:left"></template>
-
-                <el-menu-item index="2-1"><img src="./img/menu2.png" style="height: 200px;width:large"></el-menu-item>
-
-            </el-submenu>
-
-
-
-            <el-submenu index="3" style="margin-top: 100px;margin-left: 60px;">
-
-                <template slot="title"><img src="./img/word5.png"style="height:30px;float:left"></template>
-
-                <el-menu-item index="3-1"><img src="./img/menu3.png" style="height: 150px;width:large"></el-menu-item>
-
-            </el-submenu>
-
-        </el-menu>
+            <div class="thirdbox3">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./img/word4.png">
+                        </td>
+                        <td>
+                            <div id="btn2"><img src="./img/arrow.png" style="margin-left: 160px;"></div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="menu2">
+                    <img src="./img/menu2.png" style="margin-top: 100px;">
+                </div>
+            </div>
+            <div class="fourthbox3">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="./img/word5.png">
+                        </td>
+                        <td>
+                            <div id="btn3"><img src="./img/arrow.png" style="margin-left: 120px;"></div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="menu3">
+                    <img src="./img/menu3.png" style="margin-top: 100px;">
+                </div>
+            </div>
+        </div>
 
         <div>
             <img src="./img/bottom.png" style="margin-top: 100px;">
         </div>
 
-
     </div>
 
 </body>
-
-<!-- import Vue before Element -->
-
-<script src="https://unpkg.com/vue/dist/vue.js"></script>
-
-<!-- import JavaScript -->
-
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
-
+<script src="./js/jquery.min.js"></script>
 <script>
-    new Vue({
-
-        el: '#app',
-
-        data: function() {
-
-            return {
-                visible: false
-            }
-
-        }
-
+    $(function() {
+        $("#btn1").click(function() {
+            $("#menu1").toggle();
+        });
+        $("#btn2").click(function() {
+            $("#menu2").toggle();
+        });
+        $("#btn3").click(function() {
+            $("#menu3").toggle();
+        });
     })
 </script>
 
