@@ -22,40 +22,56 @@
 }
 
 .part1 .across1 .text1 {
-    margin-left: 2%;
-    font-size: 14px;
-    text-align: left;
-    font-family: PingFangSC-regular;
+   margin-left: 15px;
+right: 55px;
+
+width: 353px;
+
+font-size: 13px;
+text-align: left;
+font-family: PingFangSC-regular;
 }
 
 .part1 .across1 .arrow1 {
-    margin-right: 10%;
-    width: 75px;
-    right: 1px;
+    margin-top: 70px;
+    width:175px; 
 }
-
+.part1 .handcat{
+    margin-top: 25px;
+    margin-left: 80px;
+}
 .part1 .across2 {
     display: flex;
     flex-direction: row;
 }
 
 .part1 .across2 .arrow2 {
-    width: 175px;
-    left: 5px;
+   margin-left: 40px;
+    margin-top: 68px;
+    width:175px; 
+    left:15px;
 }
 
 .part1 .across2 .text2 {
-    top: 50px;
-    text-align: right;
-    margin-right: 50%;
-    font-size: 14px;
-    font-family: PingFangSC-regular;
+    margin-top: 30px;
+    top:50px;
+text-align: right;
+left: 12px;
+top: 583px;
+width: 342px;
+font-size: 14px;
+font-family: PingFangSC-regular;
+margin-right: 15px;
+margin-bottom: 45px;
 }
 
 .part1 .wheelp .swiper-container .swiper-wrapper .swiper-slide {
     width: 100%;
 }
-
+.part1 .buttonswiper{
+    margin:auto;
+    margin-bottom: 20px;
+}
 
 /* 模块二负责同学的样式 */
 
