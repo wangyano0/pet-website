@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
     <link rel="stylesheet" href="./css/venison.css">
     <title>Venison cat food</title>
 
@@ -13,8 +13,8 @@
 
     <div class="header">
         <div class="r">
-            <img src="./img/return.png" width="16px" height="29px">
-            <img src="./img/title.png" width="591px" height="25px" style="margin-left: 15px;">
+            <img src="./img/return.png">
+            <img src="./img/title.png" style="margin-left: 15px;">
         </div>
     </div>
 
@@ -30,11 +30,17 @@
             <div class="thirdbox1">
                 <img src="./img/amplification.png">
             </div>
+            <div>
+                <img src="./img/line.png">
+            </div>
         </div>
 
         <div class="box2">
             <div class="firstbox2">
                 <img src="./img/word1.png">
+            </div>
+            <div>
+                <img src="./img/line.png">
             </div>
         </div>
 
@@ -117,17 +123,17 @@
     var num2 = 0;
 
     $(document).on("click", "#btn1", function() {
-        num = (num + 180) % 360; //旋转180度
-        $(this).children().css("transform", "rotate(" + num + "deg)"); //三角形旋转
+        num = (num + 180) % 360;
+        $(this).children().css("transform", "rotate(" + num + "deg)");
 
     })
     $(document).on("click", "#btn2", function() {
-        num1 = (num1 + 180) % 360; //旋转180度
-        $(this).children().css("transform", "rotate(" + num1 + "deg)"); //三角形旋转
+        num1 = (num1 + 180) % 360;
+        $(this).children().css("transform", "rotate(" + num1 + "deg)");
     })
     $(document).on("click", "#btn3", function() {
-        num2 = (num2 + 180) % 360; //旋转180度
-        $(this).children().css("transform", "rotate(" + num2 + "deg)"); //三角形旋转      
+        num2 = (num2 + 180) % 360;
+        $(this).children().css("transform", "rotate(" + num2 + "deg)");
     })
 </script>
 
