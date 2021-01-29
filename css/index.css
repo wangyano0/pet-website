@@ -96,9 +96,8 @@
 }
 
 .two img {
-    width: 110%;
+    width: 100%;
     text-align: left;
-    margin-left: 30px;
     transform: translateY(-180px);
     transform: translateX();
 }
@@ -110,18 +109,18 @@
 }
 
 .three {
-    height: 80px;
+    height: 0px;
 }
 
 .three img {
     margin-right: 300px;
-    transform: translateY(220px);
+    transform: translateY(130px);
 }
 
 .TextBox1 {
     text-align: right;
     margin-right: 8%;
-    height: 560px;
+    height: 500px;
 }
 
 .TextBox1 p1 {
@@ -150,7 +149,7 @@
     text-align: left;
     margin-left: 8%;
     width: 100%;
-    height: 700px;
+    height: 200px;
 }
 
 .TextBox2 p1 {
@@ -170,6 +169,11 @@
     line-height: 1.5;
 }
 
+.TextBox2 img{
+    width: 15%;
+   margin-right: 20%;
+    transform: translateY(-105px);
+}
 
 /* 模块三负责同学的样式 */
 
