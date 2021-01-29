@@ -1,49 +1,96 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./salmon.css">
-        <title>salmon</title>
-        <link rel="stylesheet" href="./salmon.css">
-        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-    </head>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+    <link rel="stylesheet" href="./css/salmon.css">
+    <title>Venison cat food</title>
+
+</head>
 
 <body>
-    <div class="container" id="app">
-        <h1> <img src="arrow.png" style="height: 36px;float:left"><img src="title.png" style="height: 35px;width:large;">  </h1>
-            <el-menu :default-active="activeIndex" mode="horizontal" @select="handleSelect">
-                <img src="salmon1.png" style="float:left;height: 345px;">
-               <img src="salmon2.png" style="float:left;height: 400px;">
-                <el-submenu index="1">
-                  <template slot="title"><img src="choose1.png" style="height: 50px;margin-left: 7%"></template>
-                  <el-menu-item index="1-1"><img src="list1.png"style="height: 520px;width:large"></el-menu-item>
-                  </el-submenu>
-                  
-                  <el-submenu index="2">
-                    <template slot="title"><img src="choose2.png"style="height:27px;margin-left: 6%;"></template>
-                    <el-menu-item index="2-1"><img src="list2.png"style="height: 200px;width:large"></el-menu-item>
-                    </el-submenu>
+    <div class="container">
+        <h1> <img src="img/title arrow.png" style="height: 36px;float:left"><img src="img/title 1.png" style="height: 30px;width:large;">  </h1>
+        <img src="img/salmon1.png" style="float:left;height: 350px;">
+        <img src="img/salmon2.png" style="float:left;height: 400px;">
 
-                    <el-submenu index="3">
-                        <template slot="title"><img src="choose3.png"style="height:23px;margin-left: 5%;"></template>
-                        <el-menu-item index="3-1"><img src="list3.png"style="height: 150px;width:large"></el-menu-item>
-                        </el-submenu>
-            </el-menu>
-            <img src="last.png"style="height:280px">
-        </div>
+        <table> <tr><td>
+            <img src="img/choose1.png" style="height: 40px;margin-left: 17%">
+        </td>
+        <td>    
+            <div id="btn1"><img src="./img/arrow.png" style="height:7px;margin-left:160px;float:right"></div>
+        </td>
+    </tr>
+</table>
+            <div id="list1">
+                <img src="./img/list1.png" style="height:500px;">
+            </div>
+           
+
+            
+            <table> <tr><td>
+             <img src="./img/choose2.png"style="height: 40px;margin-left: 17%"> 
+            </td>
+            <td>
+             <div id="btn2"><img src="./img/arrow.png" style="height:7px;margin-left: 160px;float:right"></div>
+            </td>
+        </tr>
+    </table>
+            <div id="list2">
+                <img src="./img/list2.png" style="height: 200px;">
+            </div>
+           
+
+           
+            <table> <tr><td>
+            <img src="./img/choose3.png"style="height:40px;margin-left: 15%">
+        </td>
+        <td>
+            <div id="btn3"><img src="./img/arrow.png" style="height:7px;margin-left: 120px;float:right"></div>
+        </td>
+    </tr>
+</table>
+                <div id="list3">
+                    <img src="./img/list3.png" style="height: 140px;margin-left:9%">
+                </div>
+                <div>
+                    <img src="./img/last.png" style="margin-top: 50px;height: 270px;">
+                </div>
+    </div>
 </body>
-          <!-- import Vue before Element -->
-          <script src="https://unpkg.com/vue/dist/vue.js"></script>
-          <!-- import JavaScript -->
-          <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-          <script>
-            new Vue({
-              el: '#app',
-              data: function() {
-                return { visible: false }
-              }
-            })
-          </script>
+<script src="./js/jquery.min.js"></script>
+<script>
+    $(function() {
+        $("#btn1").click(function() {
+            $("#list1").toggle();
+        });
+        $("#btn2").click(function() {
+            $("#list2").toggle();
+        });
+        $("#btn3").click(function() {
+            $("#list3").toggle();
+        });
+    })
+
+    var num = 0;
+    var num1 = 0;
+    var num2 = 0;
+
+    $(document).on("click", "#btn1", function() {
+        num = (num + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num + "deg)"); //三角形旋转
+
+    })
+    $(document).on("click", "#btn2", function() {
+        num1 = (num1 + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num1 + "deg)"); //三角形旋转
+    })
+    $(document).on("click", "#btn3", function() {
+        num2 = (num2 + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num2 + "deg)"); //三角形旋转      
+    })
+</script>
+
+
 </html>
