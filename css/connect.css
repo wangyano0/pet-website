@@ -15,11 +15,31 @@ body{
    width: 375px;
 }
 
-.connect2 .cp2{
-    width: 375px;
+.connect2 .text{
+    margin-left: 22px;
+    
+}
+.connect2 .text .strongtext{
+    left: 24px;
+    top: 380px;
+    width: 329px;
+    height: 85px;
+    line-height:20px;
+    font-size: 18px;
+    text-align: left;
+    font-family: PingFangSC-regular;
+
  }
- .connect2 .cp3{
-    width: 375px;
+ .connect2 .text .normaltext{
+    left: 24px;
+    top: 380px;
+    width: 329px;
+    height: 85px;
+    line-height:17px;
+    font-size: 14px;
+    text-align: left;
+    font-family: PingFangSC-regular;
+
  }
  .connect2 .cp4{
     width: 375px;
