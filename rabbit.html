@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/rabbit.css">
+    <title>Schmidts Katze.com</title>
+    <link rel="stylesheet" href="./css/rabbit.css">
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>  <img src="img/return1.png" style="height: 36px;float: left;"><img src="img/head.png" style="height:35px;width:large;">  </h1> 
+            <img src="img/p1.png" style="float:left;height: 350px;">
+            <img src="img/p2.png" style="float:left;height: 380px;">
+
+            <table> <tr><td>
+            <img src="img/name.png" style="height: 50px;margin-left: 18%">
+        </td>
+        <td>    
+            <div id="btn1"><img src="./img/arrow.png" style="height:7px;margin-left:160px;float:right"></div>
+        </td>
+    </tr>
+</table>
+            <div id="menu1">
+                <img src="./img/p3.png" style="height:500px;">
+            </div>
+           
+
+            
+            <table> <tr><td>
+             <img src="./img/name2.png"style="height: 27px;margin-left: 17%"> 
+            </td>
+            <td>
+             <div id="btn2"><img src="./img/arrow.png" style="height:7px;margin-left: 160px;float:right"></div>
+            </td>
+        </tr>
+    </table>
+            <div id="menu2">
+                <img src="./img/p4.png" style="height: 200px;">
+            </div>
+           
+
+           
+            <table> <tr><td>
+            <img src="./img/name3.png"style="height: 24px;margin-left: 15%">
+        </td>
+        <td>
+            <div id="btn3"><img src="./img/arrow.png" style="height:7px;margin-left: 120px;float:right"></div>
+        </td>
+    </tr>
+</table>
+                <div id="menu3">
+                    <img src="./img/p5.png" style="height: 140px;margin-left:9%">
+                </div>
+                <div>
+                    <img src="./img/end.png" style="margin-top: 50px;height: 270px;">
+                </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+    $(function() {
+        $("#btn1").click(function() {
+            $("#menu1").toggle();
+        });
+        $("#btn2").click(function() {
+            $("#menu2").toggle();
+        });
+        $("#btn3").click(function() {
+            $("#menu3").toggle();
+        });
+    })
+
+    var num = 0;
+    var num1 = 0;
+    var num2 = 0;
+
+    $(document).on("click", "#btn1", function() {
+        num = (num + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num + "deg)"); //三角形旋转
+
+    })
+    $(document).on("click", "#btn2", function() {
+        num1 = (num1 + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num1 + "deg)"); //三角形旋转
+    })
+    $(document).on("click", "#btn3", function() {
+        num2 = (num2 + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num2 + "deg)"); //三角形旋转      
+    })
+</script>
+
+
+</html>
