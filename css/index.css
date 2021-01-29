@@ -59,7 +59,7 @@
 
 /* 模块二负责同学的样式 */
 
-#modelTwo .box {
+#modelTwo .TextBox {
     display: flex;
     left: 8px;
     top: 2000px;
@@ -73,12 +73,12 @@
     margin-top: 5%;
 }
 
-.box img {
-    transform: translateY(-90px);
+.TextBox img {
+    transform: translateY(-150px);
     margin-left: 70%;
 }
 
-.box p1 {
+.TextBox p1 {
     text-align: left;
     color: #666666;
     line-height: 50px;
@@ -86,9 +86,9 @@
     line-height: 1.5;
 }
 
-.box p2 {
+.TextBox p2 {
     text-align: left;
-    color: black;
+    color: #444444;
     line-height: 50px;
     font-size: 14px;
     font-weight: 800;
@@ -96,10 +96,11 @@
 }
 
 .two img {
-    width: 70%;
+    width: 140%;
     text-align: left;
-    margin-right: 10%;
-    transform: translateY(-130px);
+    margin-right: 50%;
+    transform: translateY(-200px);
+
 }
 
 .two {
@@ -112,15 +113,16 @@
 
 .three img {
     margin-right: 300px;
+    transform: translateY(220px);
 }
 
-.box1 {
+.TextBox1 {
     text-align: right;
     margin-right: 8%;
     height: 560px;
 }
 
-.box1 p1 {
+.TextBox1 p1 {
     text-align: right;
     color: #666666;
     line-height: 50px;
@@ -128,28 +130,28 @@
     line-height: 1.5;
 }
 
-.box1 p2 {
+.TextBox1 p2 {
     text-align: right;
-    color: black;
+    color: #444444;
     line-height: 50px;
     font-size: 14px;
     font-weight: 1000;
     line-height: 1.5;
 }
 
-.box1 img {
+.TextBox1 img {
     width: 60%;
     margin-bottom: 20%;
 }
 
-.box2 {
+.TextBox2 {
     text-align: left;
     margin-left: 8%;
     width: 100%;
     height: 700px;
 }
 
-.box2 p1 {
+.TextBox2 p1 {
     text-align: left;
     color: #666666;
     line-height: 50px;
@@ -157,9 +159,9 @@
     line-height: 1.5;
 }
 
-.box2 p2 {
+.TextBox2 p2 {
     text-align: left;
-    color: black;
+    color: #444444;
     line-height: 50px;
     font-size: 14px;
     font-weight: 800;
