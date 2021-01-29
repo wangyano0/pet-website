@@ -100,7 +100,6 @@
     text-align: left;
     margin-right: 50%;
     transform: translateY(-200px);
-
 }
 
 .two {
@@ -172,40 +171,65 @@
 /* 模块三负责同学的样式 */
 
 body {
-    min-width: 320px;
-    margin: 0 auto;
-    width: 15rem;
+    margin: 0;
+    padding: 0;
 }
 
-.first {
-    margin-right: 5%;
-    margin-bottom: 60px;
+.one {
+    margin-right: 26px;
+    margin-bottom: 58.5px;
     float: right;
-    width: 100%;
-    color: #545454;
-    font-size: 14px;
     text-align: right;
+    line-height: 18px;
+    font-family: PingFang-SC-Medium;
 }
 
-.second {
-    margin-right: 5%;
-    margin-top: 50px;
-    float: right;
-    width: 60%;
-    color: #545454;
+.one p1 {
     font-size: 14px;
-    text-align: right;
+    color: #666666;
 }
 
-.third {
-    margin-left: 5%;
-    margin-top: 110px;
-    margin-bottom: 60px;
+.one p2 {
+    font-size: 15px;
+    color: #333333;
+}
+
+.two {
+    margin-left: 25.5px;
+    margin-top: 19.5px;
     float: left;
-    width: 70%;
-    color: #545454;
-    font-size: 14px;
     text-align: left;
+}
+
+.two p3 {
+    color: #333333;
+    font-size: 27px;
+}
+
+.two p1 {
+    color: #666666;
+    font-size: 14px;
+}
+
+.three {
+    margin-right: 27.5px;
+    margin-top: 270px;
+    text-align: right;
+}
+
+.three p3 {
+    color: #333333;
+    font-size: 27px;
+}
+
+.three p1 {
+    color: #666666;
+    font-size: 14px;
+}
+
+.three p2 {
+    font-size: 15px;
+    color: #333333;
 }
 
 
