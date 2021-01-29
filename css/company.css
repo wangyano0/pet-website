@@ -11,10 +11,36 @@ body{
     flex-direction:column;
     
 }
+.company2 .text{
+    margin-left: 22px;
+    
+}
+.company2 .text .strongtext{
+    left: 24px;
+    top: 380px;
+    width: 329px;
+    
+    line-height:22px;
+    font-size: 14px;
+    text-align: left;
+    font-family: PingFangSC-regular;
+
+ }
+ .company2 .text .normaltext{
+    left: 24px;
+    top: 380px;
+    width: 329px;
+    
+    line-height:18px;
+    font-size: 13px;
+    text-align: left;
+    font-family: PingFangSC-regular;
+
+ }
 .company2 .op1{
    width: 375px;
 }
 
-.company2 .cp2{
+.company2 .op2{
     width: 375px;
  }
