@@ -14,7 +14,6 @@ body{
 .connect2 .cp1{
    width: 375px;
 }
-
 .connect2 .text{
     margin-left: 22px;
     
@@ -24,23 +23,64 @@ body{
     top: 380px;
     width: 329px;
     height: 85px;
-    line-height:20px;
+    line-height:22px;
     font-size: 18px;
     text-align: left;
     font-family: PingFangSC-regular;
+    color: rgba(8, 8, 8, 0.690);
 
  }
- .connect2 .text .normaltext{
+ .connect2 .text .strongtext1{
     left: 24px;
     top: 380px;
     width: 329px;
-    height: 85px;
-    line-height:17px;
+    
+    line-height:18px;
+    font-size: 18px;
+    text-align: left;
+    font-family: PingFangSC-regular;
+    color:  rgba(8, 8, 8, 0.690);
+    margin-top: 11px;
+    margin-bottom: 5px;
+
+ }
+ 
+ .connect2 .text .normaltext{
+    left: 24px;
+    width: 329px;
+    line-height:23px;
     font-size: 14px;
     text-align: left;
     font-family: PingFangSC-regular;
-
+    
+   
+   color: rgba(8, 8, 8, 0.616);
  }
+ .connect2 .text .normaltext1{
+    left: 24px;
+    width: 329px;
+    height: 85px;
+    font-size: 14px;
+    text-align: left;
+    font-family: PingFangSC-regular;
+   color: rgba(8, 8, 8, 0.616);
+   margin-top: 10px;
+ }
+ .connect2 .text .normaltext2{
+    left: 24px;
+    width: 329px;
+    line-height:21px;
+    font-size: 14px;
+    text-align: left;
+    font-family: PingFangSC-regular;
+    
+   
+   color: rgba(8, 8, 8, 0.616);
+ }
+ .connect2 .hr{
+     margin-top: 5px;
+ }
+ 
  .connect2 .cp4{
     width: 375px;
  }
