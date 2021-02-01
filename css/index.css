@@ -30,6 +30,7 @@ width: 353px;
 font-size: 13px;
 text-align: left;
 font-family: PingFangSC-regular;
+    color: rgba(8, 8, 8, 0.74);
 }
 
 .part1 .across1 .arrow1 {
@@ -63,6 +64,7 @@ font-size: 14px;
 font-family: PingFangSC-regular;
 margin-right: 15px;
 margin-bottom: 45px;
+    color: rgba(8, 8, 8, 0.74);
 }
 
 .part1 .wheelp .swiper-container .swiper-wrapper .swiper-slide {
