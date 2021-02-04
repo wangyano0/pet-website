@@ -22,20 +22,19 @@
 }
 
 .part1 .across1 .text1 {
-   margin-left: 15px;
-right: 55px;
-
+    margin-left: 55px;
+    right: 55px;
 width: 353px;
-
 font-size: 13px;
 text-align: left;
 font-family: PingFangSC-regular;
-    color: rgba(8, 8, 8, 0.74);
+color: rgba(8, 8, 8, 0.690);
+line-height: 19px;
 }
 
 .part1 .across1 .arrow1 {
     margin-top: 70px;
-    width:175px; 
+    margin-left: 75px;
 }
 .part1 .handcat{
     margin-top: 25px;
@@ -57,14 +56,11 @@ font-family: PingFangSC-regular;
     margin-top: 30px;
     top:50px;
 text-align: right;
-left: 12px;
-top: 583px;
 width: 342px;
-font-size: 14px;
+font-size: 13px;
 font-family: PingFangSC-regular;
-margin-right: 15px;
+color: rgba(8, 8, 8, 0.690);
 margin-bottom: 45px;
-    color: rgba(8, 8, 8, 0.74);
 }
 
 .part1 .wheelp .swiper-container .swiper-wrapper .swiper-slide {
