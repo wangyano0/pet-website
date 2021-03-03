@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,user-scalable=no">
+    <link rel="stylesheet" href="./css/chicken2.css">
+    <title>chicken</title>
+
+</head>
+
+<body leftmargin=0 topmargin=0>
+
+    <div class="header">
+        <div class="r">
+            <img src="img/return.png" style="height: 45px;float:left">
+            <img src="img/2 title one.png" style="height: 60px;width:large;">
+        </div>
+    </div>
+
+    <div class="container" id="app">
+
+        <div class="box1">
+            <div class="firstbox1">
+                <img src="./img/2 title two.png">
+            </div>
+            <div class="secondbox1">
+                <img src="./img/2 picture.png">
+            </div>
+            <div class="thirdbox1">
+                <img src="./img/amplification.png">
+            </div>
+            <div>
+                <img src="./img/line.png">
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="firstbox2">
+            <p>Beim gezielten Füttern geht es darum, genau</p>
+            <p>zu wissen, was deine Katze frisst - echte,</p>
+            <p>erkennbare Zutaten, die du kennst und denen</p>
+            <p>du vertraust. Die Komposition aus Hühnchen,</p>
+            <p>Entenherzen und Pute liefert hochwertige </p>
+            <p>Proteine und ist elementar für eine </p>
+            <p>artgerechte Ernährung. Daher ist </p>
+            <p>beispielsweise Entenherz insbesondere für</p>
+            <p> ernährungssensible Katzen  appetitlich.</p>
+            </div>
+            <div>
+                <img src="./img/line.png">
+            </div>
+        </div>
+
+        <div class="box3">
+            <div class="firstbox3">
+                <p style="color:#444444;font-size:large;font-weight: 550;">Zusammensetzung</p><br>
+                <p>Fleisch und tierische Nebener-zeugnisse(50%</p>
+                <p>Huhn, 10% Entenherzen, 10% Pute) und </p>
+                <p>Mineralstoffe</p>
+
+            </div>
+            <div class="secondbox3">
+                <table>
+                    <tr>
+                        <td>
+                            <p style="color:#444444;font-size:16px;font-weight: 550;">Zusatzstoffe per kg <br>Ernährungsphysiologische <br>Zusatzstoffe
+                            </p>
+                        </td>
+                        <td>
+                            <div id="btn1"><img src="./img/arrow.png" style="margin-left: 400px;"></div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="menu1">
+                    <img src="./img/2 list1.png" style="margin-top: 100px;">
+                </div>
+            </div>
+
+            <div class="thirdbox3">
+                <table>
+                    <tr>
+                        <td>
+                            <p style="color:#444444;font-size:16px;font-weight: 550;">Analytische Bestandteile</p>
+                        </td>
+                        <td>
+                            <div id="btn2"><img src="./img/arrow.png" style="margin-left: 400px;"></div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="menu2">
+                    <img src="./img/2 list2.png" style="margin-top: 100px;">
+                </div>
+            </div>
+            <div class="fourthbox3">
+                <table>
+                    <tr>
+                        <td>
+                            <p style="color:#444444;font-size:16px;font-weight: 550;">Fütterungsempfehlung/Tag</p>
+                        </td>
+                        <td>
+                            <div id="btn3"><img src="./img/arrow.png" style="margin-left: 400px;"></div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="menu3">
+                    <img src="./img/2 list3.png" style="margin-top: 100px;">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img src="./img/bottom.png" style="margin-top: 100px;">
+        </div>
+
+    </div>
+
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+    $(function() {
+        $("#btn1").click(function() {
+            $("#menu1").toggle();
+        });
+        $("#btn2").click(function() {
+            $("#menu2").toggle();
+        });
+        $("#btn3").click(function() {
+            $("#menu3").toggle();
+        });
+    })
+
+    var num = 0;
+    var num1 = 0;
+    var num2 = 0;
+
+    $(document).on("click", "#btn1", function() {
+        num = (num + 180) % 360;
+        $(this).children().css("transform", "rotate(" + num + "deg)");
+
+    })
+    $(document).on("click", "#btn2", function() {
+        num1 = (num1 + 180) % 360;
+        $(this).children().css("transform", "rotate(" + num1 + "deg)");
+    })
+    $(document).on("click", "#btn3", function() {
+        num2 = (num2 + 180) % 360;
+        $(this).children().css("transform", "rotate(" + num2 + "deg)");
+    })
+</script>
+
+</html>
