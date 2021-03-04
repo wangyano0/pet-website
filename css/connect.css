@@ -3,8 +3,8 @@
     padding: 0;
     }
 body{
-    width:375px;
-    height:812px;
+    width:100%;
+    height:100%;
 }
 .connect2{
     display: flex;
@@ -12,75 +12,82 @@ body{
     
 }
 .connect2 .cp1{
-   width: 375px;
+   width: 100%;
 }
 .connect2 .text{
     margin-left: 22px;
     
 }
+.text0{
+    font-family:PingFang-SC-Bold;
+    
+    color: #333333;
+    font-size: 22px;
+    font-weight: 2000px;
+    margin-bottom: 12px;
+}
 .connect2 .text .strongtext{
     left: 24px;
     top: 380px;
-    width: 329px;
-    height: 85px;
+    
     line-height:22px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
-    font-family: PingFangSC-regular;
-    color: rgba(8, 8, 8, 0.690);
+    font-family:PingFang-SC-Bold;
+    
+    color: #666666;
 
  }
  .connect2 .text .strongtext1{
     left: 24px;
     top: 380px;
-    width: 329px;
+    
     
     line-height:18px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
-    font-family: PingFangSC-regular;
-    color:  rgba(8, 8, 8, 0.690);
-    margin-top: 11px;
+    font-family:PingFang-SC-Bold;
+    
+    color: #666666;
+    margin-top: 10px;
     margin-bottom: 5px;
 
  }
  
  .connect2 .text .normaltext{
     left: 24px;
-    width: 329px;
+    
     line-height:23px;
     font-size: 14px;
     text-align: left;
-    font-family: PingFangSC-regular;
+    font-family:PingFang-SC-Bold;
     
-   
-   color: rgba(8, 8, 8, 0.616);
+    color: #666666;
  }
  .connect2 .text .normaltext1{
     left: 24px;
-    width: 329px;
-    height: 85px;
+    
     font-size: 14px;
     text-align: left;
-    font-family: PingFangSC-regular;
-   color: rgba(8, 8, 8, 0.616);
+    font-family:PingFang-SC-Bold;
+    
+    color: #666666;
    margin-top: 10px;
  }
  .connect2 .text .normaltext2{
     left: 24px;
-    width: 329px;
+   
     line-height:21px;
     font-size: 14px;
     text-align: left;
-    font-family: PingFangSC-regular;
+    font-family:PingFang-SC-Bold;
     
-   
-   color: rgba(8, 8, 8, 0.616);
+    color: #666666;
  }
  .connect2 .hr{
      margin-top: 5px;
  }
  
  .connect2 .cp4{
-    width: 375px;
+   
  }

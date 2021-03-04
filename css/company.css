@@ -3,13 +3,21 @@
     padding: 0;
     }
 body{
-    width:375px;
-    height:812px;
+    width:100%;
+    height:100%;
 }
 .company2{
     display: flex;
     flex-direction:column;
+    font-family: PingFang-SC-Medium;
+    top: 25px;
+}
+.op1{
+    color: #92AA5E;
+    font-size: 22px;
+    text-align: center;
     
+    margin-bottom: -10px;
 }
 .company2 .text{
     margin-left: 22px;
@@ -17,30 +25,30 @@ body{
 }
 .company2 .text .strongtext{
     left: 24px;
-    top: 380px;
-    width: 329px;
+    
+    
+    line-height:23px;
+    font-size: 16px;
+    text-align: left;
+    font-family: PingFang-SC-Bold;
+color:  #555555;
+font-weight: 600;
+margin-top: 55px; margin-bottom: 30px;
+ }
+ .company2 .text .normaltext{
+    left: 24px;
+   
+ 
     
     line-height:22px;
     font-size: 14px;
     text-align: left;
-    font-family: PingFangSC-regular;
-color:  rgba(8, 8, 8, 0.690);
+    font-family: PingFang-SC-Bold;
+color:  #555555;
  }
- .company2 .text .normaltext{
-    left: 24px;
-    top: 380px;
-    width: 329px;
-    
-    line-height:18px;
-    font-size: 13px;
-    text-align: left;
-    font-family: PingFangSC-regular;
-color:  rgba(8, 8, 8, 0.616);
- }
-.company2 .op1{
-   width: 375px;
-}
+
 
 .company2 .op2{
-    width: 375px;
+   
  }
+ 

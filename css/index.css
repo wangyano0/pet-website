@@ -24,8 +24,8 @@
 .part1 .across1 .text1 {
     margin-left: 55px;
     right: 55px;
-width: 353px;
-font-size: 13px;
+
+font-size: 14px;
 text-align: left;
 font-family: PingFangSC-regular;
 color: rgba(8, 8, 8, 0.690);
@@ -46,31 +46,39 @@ line-height: 19px;
 }
 
 .part1 .across2 .arrow2 {
-   margin-left: 40px;
-    margin-top: 68px;
-    width:175px; 
-    left:15px;
+   margin-left: 105px;
+    margin-bottom: 58px;
+ 
 }
 
 .part1 .across2 .text2 {
     margin-top: 30px;
     top:50px;
 text-align: right;
-width: 342px;
-font-size: 13px;
+
+font-size: 14px;
 font-family: PingFangSC-regular;
 color: rgba(8, 8, 8, 0.690);
-margin-bottom: 45px;
+margin-bottom: 65px;
 }
-
+strong{
+    font-size: 16px;
+}
 .part1 .wheelp .swiper-container .swiper-wrapper .swiper-slide {
     width: 100%;
 }
 .part1 .buttonswiper{
-    margin:auto;
+   
     margin-bottom: 20px;
 }
-
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button1{
+    display: flex;
+    justify-content: center;
+}
 /* 模块二负责同学的样式 */
 
 #modelTwo .TextBox {
