@@ -5,9 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/DataProtection.css">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <title>Document</title>
 </head>
 <body>
+    <div >
+    
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>head</title>
+            <link rel="stylesheet" href="./css/head.css">
+           
+        </head>
+        
+            <nav class="nav">
+           <div class="container">
+            <button  id="button"   >
+                <div  class="p1" >
+                    <img src="./img/logo@1x.png" style="width:20px; height:19px; ">
+                </div>
+            </button>
+        
+                <img class="p2" src="./img/logo@2x.png" >
+            
+            <div></div>
+        </div>
+            <div id="menuandshade">
+                
+                    <div class="menu">
+                        <div class="menuhead">
+            
+                          <div class="menuhead-tille">
+                             &nbsp;&nbsp;     MENÜ schlieβen 
+            
+                          </div>
+            
+                        </div>
+                        <div class="menucontent" >
+                            <div class="menucontent1">
+                               
+                                <a href="./index.html"><p >
+                                    <br>    &nbsp;  Startseite 
+                                </p></a>
+                                <a href="./ProductInformation.html" ><p>
+                                    <br>  &nbsp;  Katzenfutter 
+                                  </p></a>
+                                <a href="./connect.html" ><p>
+                                    <br>  &nbsp;   Kontakt 
+                                </p></a>
+                            </div>
+                        </div>
+                    </div>
+                <div id="shade">
+            
+                </div>
+            </div>
+        </nav>
+        
+            <script src="./js/jquery.min.js"></script>
+        <script>
+        $(function(){
+               $('#button').click(function(){
+                   $('#menuandshade').show()
+               })
+        }),
+        $('#menuandshade').css({
+            width: $('body').width(),
+              height: $('body').height(),
+            }),
+            $('#shade').css({
+              width: $('body').width(),
+              height: $('body').height(),
+            })
+            //点击领取时间、沟通时间、创建时间，弹框后点击其他处可以关闭弹框
+            function checkhide(parentclass, hideclass) {
+                    $("html").click(function checkhide(e) {
+                        if ($(e.target).parents().hasClass(parentclass)) { //如果点击区域的父级是该父级，就不做操作
+                        } else {
+                            $("." + hideclass).removeClass("#menuandshade");  //如果不是，对应的隐藏区域隐藏
+                        }
+                    });
+                }
+                checkhide('divselect1','hideul1');
+        
+            
+        
+        </script>
+            
+          
+        
+        
+        
+        </div>
     <div id="#modelSeven">
         <div class="DPhead"><img src="./img/DPhead.png" width="100%"></div>
         <div class="DPtext">
@@ -157,9 +249,71 @@
                             unter www.schmidtskatze.com/datenschutz von Ihnen abgerufen und ausgedruckt werden.</p1>
                             <br><br><br><br><br><br>
         </div>
-                 <div class="DPtail">
-                    <img src="./img/DPtail.png" width="100%">
-                </div>
+
+                
+<div >
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>footer</title>
+        <link rel="stylesheet" href="./css/footer.css">
+    </head>
+    
+        <hr  width="100%" size="2" color="#E8E8E8 ">
+        <div class="part1">
+           <div class="text1">
+               <p>
+                  <br> <strong>Folge uns</strong>
+               </p>
+           </div>
+           <div class="advertisement">
+               <img src="./img/facebook1.png" class="p1" style="width: 43px;height: 43px;">
+               <img src="./img/ins.png" class="p2" style="width: 43px;height: 43px;">
+    
+           </div>
+        </div>
+        <hr  width="100%" size="2" color="#E8E8E8 ">
+        <div class="part2">
+            <div class="text2">
+                <p style="color: #333333;">
+                    <strong>Noch Fragen? <br></strong> 
+                </p>
+               <div class="emiailtext">
+                <img src="./img/email.png" style="width: 21px;height: 21px;">
+                <p class="service">
+                     service@ 
+                </p>
+               </div>
+                
+                    <p>
+                        schmidtskatze.com
+                    </p>
+            </div>
+            <div class="p3">
+             <img src="./img/handcat.png" style="width: 63px;height: 95px;">
+            </div>
+            
+        </div>
+        <hr  width="100%" size="2" color="#E8E8E8 ">
+        <div class="part3">
+            <div>
+                <a href="./DataProtection.html"><p >
+                    Datenschutzerklärung
+                </p></a>
+            </div>
+            <div>
+                <a href="./company.html"><p >
+                    Impressum
+                </p></a>
+            </div>
+    
+        </div>
+    
+    
+    
+    </div>
     </div>
 </body>
 </html>

@@ -22,13 +22,19 @@
     border: 0;
     background-color:transparent;
     border-style:none;
-    margin-left: 25px;
+   width: 50px;
 }
+
 .p1{
-   
+transform: translateX(-80px);
+margin-top: 10px;
 }
+
+
  .p2{
-    height: 70px;
+    width: 10%;
+    transform: translateX(22px);
+    margin-top: 11px;
 }
 
 .menu{
