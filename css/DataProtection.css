@@ -1,3 +1,11 @@
+.DPhead{
+    color: #92AA5E;
+    font-size: 22px;
+    text-align: center;
+    
+    margin-bottom: -10px;
+}
+
 .DPtext{
     width: 329px;
     margin-left: 23px;
