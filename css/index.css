@@ -22,33 +22,32 @@
 }
 
 .part1 .across1 .text1 {
-    margin-left: 55px;
+    margin-left: 20px;
     right: 55px;
-
-font-size: 14px;
+font-size: 16px;
 text-align: left;
 font-family: PingFangSC-regular;
-color: rgba(8, 8, 8, 0.690);
+color: #7b7b7b;
 line-height: 19px;
+margin-top: 10px;
 }
 
 .part1 .across1 .arrow1 {
     margin-top: 70px;
-    margin-left: 75px;
 }
 .part1 .handcat{
     margin-top: 25px;
-    margin-left: 80px;
 }
 .part1 .across2 {
     display: flex;
     flex-direction: row;
+    
 }
 
 .part1 .across2 .arrow2 {
-   margin-left: 105px;
-    margin-bottom: 58px;
- 
+   margin-left: 10px;
+ margin-top: 60px;
+  transform: translateX(30px);
 }
 
 .part1 .across2 .text2 {
@@ -58,7 +57,7 @@ text-align: right;
 
 font-size: 14px;
 font-family: PingFangSC-regular;
-color: rgba(8, 8, 8, 0.690);
+color: #7b7b7b;
 margin-bottom: 65px;
 }
 strong{
@@ -143,6 +142,7 @@ strong{
     text-align: right;
     margin-right: 8%;
     height: 500px;
+    transform: translateY(-80px);
 }
 
 .TextBox1 p1 {
