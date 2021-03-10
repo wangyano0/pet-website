@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+}
+html {
+    font-size: 62.5%;
+}
+.container{
+    width: 400px;;
+    height: 37px;
+    background-color: #92aa5e;
+}
+.m1{
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgb(103, 105, 107);
+    margin-top: 35px
+}
+.m2{
+    font-size: 16px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.m3{
+    margin-left: 25px;
+    font-size: 14px;
+    color: rgb(103, 105, 107);
+    margin-top: 15px
+}
