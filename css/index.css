@@ -24,60 +24,66 @@
 .part1 .across1 .text1 {
     margin-left: 20px;
     right: 55px;
-font-size: 16px;
-text-align: left;
-font-family: PingFangSC-regular;
-color: #7b7b7b;
-line-height: 19px;
-margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+    font-family: PingFangSC-regular;
+    color: #7b7b7b;
+    line-height: 19px;
+    margin-top: 10px;
 }
 
 .part1 .across1 .arrow1 {
     margin-top: 70px;
 }
-.part1 .handcat{
+
+.part1 .handcat {
     margin-top: 25px;
 }
+
 .part1 .across2 {
     display: flex;
     flex-direction: row;
-    
 }
 
 .part1 .across2 .arrow2 {
-   margin-left: 10px;
- margin-top: 60px;
-  transform: translateX(30px);
+    margin-left: 10px;
+    margin-top: 60px;
+    transform: translateX(30px);
 }
 
 .part1 .across2 .text2 {
     margin-top: 30px;
-    top:50px;
-text-align: right;
-
-font-size: 14px;
-font-family: PingFangSC-regular;
-color: #7b7b7b;
-margin-bottom: 65px;
+    top: 50px;
+    text-align: right;
+    font-size: 14px;
+    font-family: PingFangSC-regular;
+    color: #7b7b7b;
+    margin-bottom: 65px;
 }
-strong{
+
+strong {
     font-size: 16px;
 }
+
 .part1 .wheelp .swiper-container .swiper-wrapper .swiper-slide {
     width: 100%;
 }
-.part1 .buttonswiper{
-   
+
+.part1 .buttonswiper {
     margin-bottom: 20px;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: center;
 }
-.button1{
+
+.button1 {
     display: flex;
     justify-content: center;
 }
+
+
 /* 模块二负责同学的样式 */
 
 #modelTwo .TextBox {
@@ -147,7 +153,7 @@ strong{
 
 .TextBox1 p1 {
     text-align: right;
-    color:  #7b7b7b;
+    color: #7b7b7b;
     line-height: 50px;
     font-size: 14px;
     line-height: 1.5;
@@ -176,7 +182,7 @@ strong{
 
 .TextBox2 p1 {
     text-align: left;
-    color:  #7b7b7b;
+    color: #7b7b7b;
     line-height: 50px;
     font-size: 14px;
     line-height: 1.5;
@@ -191,11 +197,12 @@ strong{
     line-height: 1.5;
 }
 
-.TextBox2 img{
+.TextBox2 img {
     width: 15%;
-   margin-right: 20%;
+    margin-right: 20%;
     transform: translateY(-105px);
 }
+
 
 /* 模块三负责同学的样式 */
 
@@ -242,8 +249,9 @@ body {
 
 .three {
     margin-right: 27.5px;
-    margin-top: 270px;
+    margin-top: 50px;
     text-align: right;
+    float: right;
 }
 
 .three p3 {

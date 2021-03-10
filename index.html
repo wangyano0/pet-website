@@ -11,116 +11,119 @@
     <link rel="stylesheet" href="./css/head.css">
     <title>petwebsite</title>
     <style>
-      strong{
-	font-weight:bold !important;
-      }
+        strong {
+            font-weight: bold !important;
+        }
     </style>
 </head>
 
 <body leftmargin=0 topmargin=0>
     <!--每个负责哪个模块的同学在对应的div盒子里面写代码-->
-    
-    <div >
-    
+
+    <div>
+
         <head>
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>head</title>
             <link rel="stylesheet" href="./css/head.css">
-           
+
         </head>
-        
-            <nav class="nav">
-           <div class="container">
-            <button  id="button"   >
+
+        <nav class="nav">
+            <div class="container">
+                <button id="button">
                 <div  class="p1" >
                     <img src="./img/logo@1x.png" style="width:20px; height:19px; ">
                 </div>
             </button>
-        
+
                 <img class="p2" src="./img/logo@2x.png" style="margin-right: 180px;">
-            
-            <div></div>
-        </div>
+
+                <div></div>
+            </div>
             <div id="menuandshade">
-                
-                    <div class="menu">
-                        <div class="menuhead">
-            
-                          <div class="menuhead-tille">
-                             &nbsp;&nbsp;     MENÜ schlieβen 
-            
-                          </div>
-            
+
+                <div class="menu">
+                    <div class="menuhead">
+
+                        <div class="menuhead-tille">
+                            &nbsp;&nbsp; MENÜ schlieβen
+
                         </div>
-                        <div class="menucontent" >
-                            <div class="menucontent1">
-                               
-                                <a href="./index.html"><p >
-                                    <br>    &nbsp;  Startseite 
-                                </p></a>
-                                <a href="./ProductInformation.html" ><p>
-                                    <br>  &nbsp;  Katzenfutter 
-                                  </p></a>
-                                <a href="./connect.html" ><p>
-                                    <br>  &nbsp;   Kontakt 
-                                </p></a>
-                            </div>
+
+                    </div>
+                    <div class="menucontent">
+                        <div class="menucontent1">
+
+                            <a href="./index.html">
+                                <p>
+                                    <br> &nbsp; Startseite
+                                </p>
+                            </a>
+                            <a href="./ProductInformation.html">
+                                <p>
+                                    <br> &nbsp; Katzenfutter
+                                </p>
+                            </a>
+                            <a href="./connect.html">
+                                <p>
+                                    <br> &nbsp; Kontakt
+                                </p>
+                            </a>
                         </div>
                     </div>
+                </div>
                 <div id="shade">
-            
+
                 </div>
             </div>
         </nav>
-        
-            <script src="./js/jquery.min.js"></script>
+
+        <script src="./js/jquery.min.js"></script>
         <script>
-        $(function(){
-               $('#button').click(function(){
-                   $('#menuandshade').show()
-               })
-        }),
-        $('#menuandshade').css({
-            width: $('body').width(),
-              height: $('body').height(),
-            }),
-            $('#shade').css({
-              width: $('body').width(),
-              height: $('body').height(),
-            })
-            //点击领取时间、沟通时间、创建时间，弹框后点击其他处可以关闭弹框
+            $(function() {
+                    $('#button').click(function() {
+                        $('#menuandshade').show()
+                    })
+                }),
+                $('#menuandshade').css({
+                    width: $('body').width(),
+                    height: $('body').height(),
+                }),
+                $('#shade').css({
+                    width: $('body').width(),
+                    height: $('body').height(),
+                })
+                //点击领取时间、沟通时间、创建时间，弹框后点击其他处可以关闭弹框
             function checkhide(parentclass, hideclass) {
-                    $("html").click(function checkhide(e) {
-                        if ($(e.target).parents().hasClass(parentclass)) { //如果点击区域的父级是该父级，就不做操作
-                        } else {
-                            $("." + hideclass).removeClass("#menuandshade");  //如果不是，对应的隐藏区域隐藏
-                        }
-                    });
-                }
-                checkhide('divselect1','hideul1');
-        
-            
-        
+                $("html").click(function checkhide(e) {
+                    if ($(e.target).parents().hasClass(parentclass)) { //如果点击区域的父级是该父级，就不做操作
+                    } else {
+                        $("." + hideclass).removeClass("#menuandshade"); //如果不是，对应的隐藏区域隐藏
+                    }
+                });
+            }
+            checkhide('divselect1', 'hideul1');
         </script>
-            
-        </div>
-    
+
+    </div>
+
     <div class="content">
 
-         <div id="modelOne">
+        <div id="modelOne">
             <div class="part1">
                 <div class="firstpicture">
-                     
-                    <img src="./img/newfp.png" width=100% >
+
+                    <img src="./img/newfp.png" width=100%>
                 </div>
                 <div class="across1" style="justify-content: space-between;">
-                    <div class="text1"  >
+                    <div class="text1">
                         <p>
-                           <br>  Folge deinen Instinkten. Du bist <br>hier, weil du dein Haustier<br> liebst? Du tust alles, um deinem <br>Lieblingsfamilienmitglied ein
+                            <br> Folge deinen Instinkten. Du bist <br>hier, weil du dein Haustier<br> liebst? Du tust alles, um deinem <br>Lieblingsfamilienmitglied ein
                             <br>langes, glückliches Leben zu <br>ermöglichen? Dann können wir<br> dir mit unseren Produkten <strong>eine <br>ideale Grundlage</strong> für das <strong><br>Wohlbefinden deines <br>Haustieres anbieten.</strong>
-                           
+
                         </p>
                     </div>
                     <div class="arrow1" style="margin-right: 8%;">
@@ -129,11 +132,11 @@
                 </div>
                 <div class="button1">
                     <div></div>
-                    <img  class="handcat"  src="./img/love.png"   style="width:387pt; height:250pt;" >
+                    <img class="handcat" src="./img/love.png" style="width:387pt; height:250pt;">
                     <div></div>
                 </div>
                 <div class="across2" style="justify-content: space-between;">
-                    <div class="arrow2" >
+                    <div class="arrow2">
                         <img src="./img/right_arrow.png" style="width:59.5pt; height:121pt" alt="rightarrow">
                     </div>
                     <div class="text2" style="margin-right: 8%;">
@@ -154,7 +157,7 @@
                             <div class="swiper-slide"><img src="./img/swiper1.png" alt="wheelp" style="width:100%;  ">
                             </div>
                             <div class="swiper-slide"><img src="./img/swiper1.png" alt="wheelp" style="width:100%;  ">
-                            
+
                             </div>
                         </div>
                         <!-- Add Pagination -->
@@ -190,402 +193,407 @@
                         keyboard: true,
                     });
                 </script>
-              
-            </div>
-                </div>
 
-
-
-                <!-- Swiper JS -->
-                <script src="./js/swiper.min.js"></script>
-                <!-- Initialize Swiper -->
-                <script>
-                    var swiper = new Swiper('.swiper-container', {
-                        cssMode: true,
-                        navigation: {
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev',
-                        },
-                        pagination: {
-                            el: '.swiper-pagination'
-                        },
-                        mousewheel: true,
-                        keyboard: true,
-                    });
-                </script>
-               
             </div>
         </div>
-<div>
+
+
+
+        <!-- Swiper JS -->
+        <script src="./js/swiper.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                cssMode: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination'
+                },
+                mousewheel: true,
+                keyboard: true,
+            });
+        </script>
+
+    </div>
+    </div>
+    <div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-</div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
 
-<div id="modelTwo">
-            <div class="TextBox">
-                <div>
-                    <p1> Weil wir ein unabhängiges </p1>
-                    <br>
-                    <p1>Unternehmen sind können wir</p1>
-                    <br>
-                    <p1>uns voll auf</p1>
-                    <p2>innovative</p2>
-                    <br>
-                    <p2>Produktforschung</p2>
-                    <br>
-                    <p1>konzentrieren, um die Qualität</p1>
-                    <br>
-                    <p1>unserer Produkte stetig auf dem</p1>
-                    <br>
-                    <p1>neuesten Stand der</p1>
-                    <br>
-                    <p1>Wissenschaft anbieten zu</p1>
-                    <br>
-                    <p1>können. Dies ist uns aus</p1>
-                    <br>
-                    <p1>folgenden Gründen wichtig: </p1>
-                    <img src="./img/left_arrow.png" width="18%">
-                </div>
-            </div>
-
-            <div class="two">
-                <img src="./img/meat.png">
-            </div>
-
-            <div class="three">
-                <img src="./img/right_arrow.png" width="18%">
-            </div>
-
-            <div class="TextBox1">
-                <p1>Vielleicht wusstest du schon,</p1>
-                <br>
-                <p1>dass je</p1>
-                <p2>weniger verdaulich</p2>
-                <p1>ein</p1>
-                <br>
-                <p1>Futter ist, desto größer die </p1>
-                <br>
-                <p1>Wahrscheinlichkeit ist, dass </p1>
-                <br>
-                <p1>deinem Haustier die</p1>
-                <br>
-                <p2>notwendigen Nährstoffe </p2>
-                <br>
-                <p2>fehlen.</p2>
-                <br>
-                <p1>Wissenschaftliche Studien</p1>
-                <br>
-                <p1>zeigen beispielsweise, dass</p1>
-                <br>
-                <p1>weniger Aminosäuren absorbiert</p1>
-                <br>
-                <p1>werden, wenn ein</p1>
-                <br>
-                <p1>Makronährstoff wie Protein</p1>
-                <br>
-                <p1> weitestgehend unverdaut bleibt. </p1>
-                <br>
-                <p1>Auch bei einer</p1>
-                <br>
-                <p1>nicht-tiergerechten Ernährung</p1>
-                <br>
-                <p1>bleibt ein Großteil der</p1>
-                <br>
-                <p1>Ballaststoffe unverdaut, wodurch</p1>
-                <br>
-                <p1>die Aufnahme von</p1>
-                <br>
-                <p1>Mikronährstoffen für dein Tier</p1>
-                <br>
-                <p1>erschwert werden kann.</p1>
-                
-            </div>
-            
-            <div class="four">
-                <img src="./img/illustration2.png" width="100%">
-            </div>
-           
-
-
-            <div class="TextBox2">
-             
-                <br>
-                <p1> Eine</p1>
-                <p2>artgerechte</p2>
-                <p2>Tiernahrung</p2>
-                <br>
-                <p1>hingegen kann</p1>
-                <p1>entscheidend  </p1>
-                <br>
-                <p1>dazu beitragen,das</p1>
-                <br>
-                <p2>Wohlergehen deines Tieres zu</p2>
-                <br>
-                <p2> steigern,</p2>
-                <p1>ihm mehr Energie zu</p1>
-                <br>
-                <p1>  geben und ihm dabei zu helfen,</p1>
-                <br>
-                <p2>naturgemäßer zu leben.</p2>
-                <img src="./img/left_arrow.png" style="float: right;">
-            </div>
-        </div>
-
-
-        <div id="modelThree">
-            <div class="first">
-                <img src="./img/right_arrow.png" style="float: left;;margin-left: 20pt;width:50px ; margin-top: 80px;">
-                <div class="one">
-                    <p1>Neben diesen</p1>
-                    <br>
-                    <p1>wissenschaftlichen</p1>
-                    <br>
-                    <p1>Erkenntnissen ist es für uns als</p1>
-                    <br>
-                    <p1>Familienunternehmen</p1>
-                    <br>
-                    <p1>selbstverständlich, dass wir nur</p1>
-                    <br>
-                    <p2>naturbelassene Zutaten aus</p2>
-                    <br>
-                    <p2>regionaler Produktion</p2>
-                    <br>
-                    <p1>verwenden.</p1>
-                    <br>
-                </div>
-
-            </div>
-            <img src="./img/illustration3.png" width=100%>
-            <div class="second">
-                <div class="two">
-                    <p3>Kein Plastik</p3>
-                    <br>
-                    <br>
-                    <p1>Wir sind ein Naturliebhaber und</p1>
-                    <br>
-                    <p1>wir sind stolz darauf,dass</p1>
-                    <br>
-                    <p1>unsere Verpackung den Planeten</p1>
-                    <br>
-                    <p1>nicht verletzt.Wir wissen,dass</p1>
-                    <br>
-                    <p1>wir noch nicht perfekt sind.Aber</p1>
-                    <br>
-                    <p1>es ist eine Pfote in die richtige</p1>
-                    <br>
-                    <p1>Richtung.</p1>
-
-                </div>
-                <img src="./img/left_arrow.png" style="width: 50px; float: right;margin-right:25px;">
-            </div>
-            <div class="third">
-                <div class="three">
-                    <p3>Umweltfreundlich</p3>
-                    <br>
-                    <br>
-                    <p1>Unser Katzenfutter ist 100%</p1>
-                    <br>
-                    <p1>klimaneutral,es wird</p1>
-                    <br>
-                    <p1>zunehmend mit erneuerbaren</p1>
-                    <br>
-                    <p1>Energien hergestellt.Wir</p1>
-                    <br>
-                    <p1>vermeiden lange</p1>
-                    <br>
-                    <p1>Transportwege,deshalb</p1>
-                    <br>
-                    <p1>beziehen wir</p1>
-                    <p2>bis zu 75% der</p2>
-                    <br>
-                    <p2>Zutaten aus der Region </p2>
-                    <p1>in</p1>
-                    <br>
-                    <p1>Niedersachsen.</p1>
-                </div>
-                <img src="./img/earth.png" style="border:dotted 1px; margin-left:18px;width: 108px; margin-top: 83px;">
-            </div>
-
-            <img src="./img/illustration4.png" width="100%" style="margin-top: 90px;">
-        </div>
-
-        <div id="modelFoure">
+    <div id="modelTwo">
+        <div class="TextBox">
             <div>
-                <h2 class="container" style="font-size:25px;margin-left: 7%;color: #1b1a1a;float:left;
-                margin-top: 50px;">     Unsere Aufgabe   </h2>
-                <p style="font-size:14px;text-align:left;margin-left: 7%;color: #545454;">
-                    <br><br><br><br><br>Wir haben die Mission, das
-                    <br> Leben von Haustieren positiv zu
-                    <br> verändern. Wir glauben, dass<br>
-                    <strong>alle Haustiere das
+                <p1> Weil wir ein unabhängiges </p1>
+                <br>
+                <p1>Unternehmen sind können wir</p1>
+                <br>
+                <p1>uns voll auf</p1>
+                <p2>innovative</p2>
+                <br>
+                <p2>Produktforschung</p2>
+                <br>
+                <p1>konzentrieren, um die Qualität</p1>
+                <br>
+                <p1>unserer Produkte stetig auf dem</p1>
+                <br>
+                <p1>neuesten Stand der</p1>
+                <br>
+                <p1>Wissenschaft anbieten zu</p1>
+                <br>
+                <p1>können. Dies ist uns aus</p1>
+                <br>
+                <p1>folgenden Gründen wichtig: </p1>
+                <img src="./img/left_arrow.png" width="18%">
+            </div>
+        </div>
+
+        <div class="two">
+            <img src="./img/meat.png">
+        </div>
+
+        <div class="three">
+            <img src="./img/right_arrow.png" width="18%">
+        </div>
+
+        <div class="TextBox1">
+            <p1>Vielleicht wusstest du schon,</p1>
+            <br>
+            <p1>dass je</p1>
+            <p2>weniger verdaulich</p2>
+            <p1>ein</p1>
+            <br>
+            <p1>Futter ist, desto größer die </p1>
+            <br>
+            <p1>Wahrscheinlichkeit ist, dass </p1>
+            <br>
+            <p1>deinem Haustier die</p1>
+            <br>
+            <p2>notwendigen Nährstoffe </p2>
+            <br>
+            <p2>fehlen.</p2>
+            <br>
+            <p1>Wissenschaftliche Studien</p1>
+            <br>
+            <p1>zeigen beispielsweise, dass</p1>
+            <br>
+            <p1>weniger Aminosäuren absorbiert</p1>
+            <br>
+            <p1>werden, wenn ein</p1>
+            <br>
+            <p1>Makronährstoff wie Protein</p1>
+            <br>
+            <p1> weitestgehend unverdaut bleibt. </p1>
+            <br>
+            <p1>Auch bei einer</p1>
+            <br>
+            <p1>nicht-tiergerechten Ernährung</p1>
+            <br>
+            <p1>bleibt ein Großteil der</p1>
+            <br>
+            <p1>Ballaststoffe unverdaut, wodurch</p1>
+            <br>
+            <p1>die Aufnahme von</p1>
+            <br>
+            <p1>Mikronährstoffen für dein Tier</p1>
+            <br>
+            <p1>erschwert werden kann.</p1>
+
+        </div>
+
+        <div class="four">
+            <img src="./img/illustration2.png" width="100%">
+        </div>
+
+
+
+        <div class="TextBox2">
+
+            <br>
+            <p1> Eine</p1>
+            <p2>artgerechte</p2>
+            <p2>Tiernahrung</p2>
+            <br>
+            <p1>hingegen kann</p1>
+            <p1>entscheidend </p1>
+            <br>
+            <p1>dazu beitragen,das</p1>
+            <br>
+            <p2>Wohlergehen deines Tieres zu</p2>
+            <br>
+            <p2> steigern,</p2>
+            <p1>ihm mehr Energie zu</p1>
+            <br>
+            <p1> geben und ihm dabei zu helfen,</p1>
+            <br>
+            <p2>naturgemäßer zu leben.</p2>
+            <img src="./img/left_arrow.png" style="float: right;">
+        </div>
+    </div>
+
+
+    <div id="modelThree">
+        <div class="first">
+            <img src="./img/right_arrow.png" style="float: left;;margin-left: 20pt;width:50px ; margin-top: 80px;">
+            <div class="one">
+                <p1>Neben diesen</p1>
+                <br>
+                <p1>wissenschaftlichen</p1>
+                <br>
+                <p1>Erkenntnissen ist es für uns als</p1>
+                <br>
+                <p1>Familienunternehmen</p1>
+                <br>
+                <p1>selbstverständlich, dass wir nur</p1>
+                <br>
+                <p2>naturbelassene Zutaten aus</p2>
+                <br>
+                <p2>regionaler Produktion</p2>
+                <br>
+                <p1>verwenden.</p1>
+                <br>
+            </div>
+
+        </div>
+        <img src="./img/illustration3.png" width=100%>
+        <div class="second">
+            <div class="two">
+                <p3>Kein Plastik</p3>
+                <br>
+                <br>
+                <p1>Wir sind ein Naturliebhaber und</p1>
+                <br>
+                <p1>wir sind stolz darauf,dass</p1>
+                <br>
+                <p1>unsere Verpackung den Planeten</p1>
+                <br>
+                <p1>nicht verletzt.Wir wissen,dass</p1>
+                <br>
+                <p1>wir noch nicht perfekt sind.Aber</p1>
+                <br>
+                <p1>es ist eine Pfote in die richtige</p1>
+                <br>
+                <p1>Richtung.</p1>
+
+            </div>
+            <img src="./img/left_arrow.png" style="width: 50px; float: right;margin-right:35px;">
+        </div>
+        <img src="./img/earth.png" style="border:dotted 1px; width: 50%;margin-left: 80px;margin-top: 140px;">
+        <div class="third">
+            <div class="three">
+                <p3>Umweltfreundlich</p3>
+                <br>
+                <br>
+                <p1>Unser Katzenfutter ist 100%</p1>
+                <br>
+                <p1>klimaneutral,es wird</p1>
+                <br>
+                <p1>zunehmend mit erneuerbaren</p1>
+                <br>
+                <p1>Energien hergestellt.Wir</p1>
+                <br>
+                <p1>vermeiden lange</p1>
+                <br>
+                <p1>Transportwege,deshalb</p1>
+                <br>
+                <p1>beziehen wir</p1>
+                <p2>bis zu 75% der</p2>
+                <br>
+                <p2>Zutaten aus der Region </p2>
+                <p1>in</p1>
+                <br>
+                <p1>Niedersachsen.</p1>
+            </div>
+            <img src="./img/right_arrow.png" style="width: 50px;margin-left:35px;margin-top: 50px; float: left;">
+        </div>
+
+        <img src="./img/illustration4.png" width="100%" style="margin-top: 140px;">
+
+    </div>
+
+    <div id="modelFoure">
+        <div>
+            <h2 class="container" style="font-size:25px;margin-left: 7%;color: #1b1a1a;float:left;
+                margin-top: 50px;"> Unsere Aufgabe </h2>
+            <p style="font-size:14px;text-align:left;margin-left: 7%;color: #545454;">
+                <br><br><br><br><br>Wir haben die Mission, das
+                <br> Leben von Haustieren positiv zu
+                <br> verändern. Wir glauben, dass<br>
+                <strong>alle Haustiere das
                     <br></strong>
-                    <strong>bestmögliche Leben</strong>
-                    <br><strong> verdienen</strong> - und dies beginnt
-                    <br> mit dem Essen. Wir möchten das
-                    <br> Bedürfnis unserer Haustiere
-                    <br> nach echtem Futter befriedigen.
-                    <br> Wir bleiben bei dem, was
-                    <img src="./img/HoldingCat2.png" style="height:120px;float:right">
-                    <br>                    natürlich ist, und halten es
-                    <br>einfach. Und so rein wie
-                    <br> möglich.Folgen wir dem Beispiel
-                    <br> der Natur und geben rohe
-                    <br> Nahrung die <strong>frei von
+                <strong>bestmögliche Leben</strong>
+                <br><strong> verdienen</strong> - und dies beginnt
+                <br> mit dem Essen. Wir möchten das
+                <br> Bedürfnis unserer Haustiere
+                <br> nach echtem Futter befriedigen.
+                <br> Wir bleiben bei dem, was
+                <img src="./img/chicken.png" style="height:120px;float:right">
+                <br> natürlich ist, und halten es
+                <br>einfach. Und so rein wie
+                <br> möglich.Folgen wir dem Beispiel
+                <br> der Natur und geben rohe
+                <br> Nahrung die <strong>frei von
                     <br>Füllstoffen, Nebenprodukten
                     <br>und künstlichen
                     <br>Konservierungsstoffen</strong> ist.Wir
-                    <br> möchten Tiernahrung neu
-                </p>
+                <br> möchten Tiernahrung neu
+            </p>
 
-                   <img src="./img/left_arrow.png" style="height:110px;margin-top:7%;float:right">
+            <img src="./img/left_arrow.png" style="height:110px;margin-top:7%;margin-left: 250px;">
 
-                <h2 class="container2" style="font-size:25px;float: right;margin-top: 150px;color: #1b1a1a;text-align:right;">UNSERE ZUTAEN</h2>
-                <p style="font-size: 14px;margin-right: 7%;color: #545454;margin-top: 180px;text-align:right;">
-                    <br>Echtes frisches Fleisch, Kokosöl,
-                    <br> Apfelessig oder Kurkuma sind
-                    <br> nur einige der Zutaten, die wir
-                    <br> verwenden, um
-                    <strong> natürlich
+            <h2 class="container2" style="font-size:25px;float: right;margin-top: 20px;color: #1b1a1a;margin-right: 30px;">UNSERE ZUTAEN</h2>
+            <p style="font-size: 14px;margin-right: 7%;color: #545454;margin-top: 50px;text-align:right;">
+                <br>Echtes frisches Fleisch, Kokosöl,
+                <br> Apfelessig oder Kurkuma sind
+                <br> nur einige der Zutaten, die wir
+                <br> verwenden, um
+                <strong> natürlich
                     <img src="./img/fish.png" width="28%" ; style="float:left;margin-right: 5%" />
                     <br>gewonnene Nährstoffe </strong> und
-                    <br>Enzyme<br>bereitzustellen, die zum<br>
-                    <strong>allgemeinen Wohlbefinden</strong> , zur
-                    <br><strong>lmmun- und</strong><br>
-                    <strong>Verdauungsgesundheit,</strong>zu<br>
-                    <strong>schlanken Muskeln </strong>und zu
-                    <br><strong>gesunder Haut und
+                <br>Enzyme<br>bereitzustellen, die zum<br>
+                <strong>allgemeinen Wohlbefinden</strong> , zur
+                <br><strong>lmmun- und</strong><br>
+                <strong>Verdauungsgesundheit,</strong>zu<br>
+                <strong>schlanken Muskeln </strong>und zu
+                <br><strong>gesunder Haut und
                     <br>Gesundheit </strong>beitragen.<br>
+            </p>
+        </div>
+    </div>
+
+    <img src="./img/right_arrow.png" style="height:110px;margin-top:7%;margin-left: 100px;">
+
+
+
+    <div class="story-element--text-wrapper">
+        <h2 class="story-element--content-headline">
+            <p style="font-size: 25px; width:150px;float:left;margin-left: 7%;
+                 margin-top: 20px;">UNSER PROTEIN
+        </h2>
+        <div class="story-element--content-text">
+            <p style="font-size: 14px;text-align:left;margin-left: 7%;color: #545454;margin-top: 20px">
+                <br><br><br><br> Wenn es um Protein geht,<br>denken wir,dass die Quelle<img src="./img/rabbit.png" style="margin-top: 10px;float:right;" width="30%"><br>wichtig ist. Alle unsere Rezepte<br>beginnen mit tierischem<br> Eiweiβ - wir glauben, dass dies<br> die Hauptproteinquelle sein<br> sollte,
+                <br> nicht Erbsen oder Kartoffeln.<br> Tierisches Protein liefert alle<br>essentiellen Aminosäuren, die<br>ein gesundes Haustier benötigt<br>-etwas, das pflanzliches Protein<br>allein nicht liefern kann.</p>
+        </div>
+    </div>
+
+    <img src="./img/left_arrow.png" style="height:110px;margin-top:7%;margin-left: 250px">
+    <!--模块6负责的同学-->
+
+    <div class="story-element--text-wrapper">
+
+        <h2 class="story-element--content-headline">
+            <p style="font-size:25px;float: right;margin-top: 20px;color: #1b1a1a;margin-right: 30px;">UNSER KONZEPT
+        </h2>
+        <div class="story-element--content-text">
+            <p style="font-size: 14px;text-align:right;color: #545454;margin-right: 20px;">
+                <br><br><br> <br>Unsere Rezepte sind frei von <br> Getreide, Mais, Weizen und<br> Soja. Zutaten, die<br> Nahrungsmittelempfindlichkeiten
+                <br>verursachen werden von uns <br>nicht verwendet. Wir glauben <img src="./img/deer.png" style="margin-top: 10px;float:left;" width="30%"> <br>nicht an die Verwendung von
+                <br>Füllstoffen - wir denken, dass <br>
+                <strong>jede Zutat einen <br> ernährungsphysiologischen <br>und funktionellen Zweck<br></strong> haben sollte. Da wir der Meinung <br>sind, dass jede Zutat einen <br>Zweck haben sollte - und einen,<br> der für unsere Haustiere von
+                <br>Vorteil ist -, entscheiden wir <br>uns,
+                <strong>keine künstlichen <br>Farbstoffe</strong> in unsere <br>Lebensmittel aufzunehmen. Wir
+                <br>bleiben lieber bei dem, was <br>
+                <strong>ganz natürlich</strong> ist. Und absolut <br>notwendig.</p>
+
+        </div>
+    </div>
+
+
+    <div>
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>footer</title>
+            <link rel="stylesheet" href="./css/footer.css">
+        </head>
+
+        <hr width="100%" size="2" color="#E8E8E8 ">
+        <div class="part1">
+            <div class="text1">
+                <p>
+                    <br> <strong>Folge uns</strong>
                 </p>
             </div>
-        </div>
+            <div class="advertisement">
+                <img src="./img/facebook1.png" class="p1" style="width: 43px;height: 43px;">
+                <img src="./img/ins.png" class="p2" style="width: 43px;height: 43px;">
 
-        <img src="./img/right_arrow.png" style="height:110px;margin-top:7%;float:left">
-
-
-
-        <div class="story-element--text-wrapper">
-            <h2 class="story-element--content-headline">
-                <p style="font-size: 16px; width:150px;float:left;margin-left: 5%;
-                 margin-top: 200px;">UNSER PROTEIN
-            </h2>
-            <div class="story-element--content-text">
-                <p style="font-size: 14px;text-align:left;margin-left: 5%;color: #545454">
-                    Wenn es um Protein geht,<br>denken wir,dass die Quelle<img src="./img/rabbit.png" style="margin-top: 10px;float:right;" width="30%"><br>wichtig ist. Alle unsere Rezepte<br>beginnen mit tierischem<br> Eiweiβ - wir glauben, dass dies<br> die Hauptproteinquelle sein<br> sollte,
-                    <br> nicht Erbsen oder Kartoffeln.<br> Tierisches Protein liefert alle<br>essentiellen Aminosäuren, die<br>ein gesundes Haustier benötigt<br>-etwas, das pflanzliches Protein<br>allein nicht liefern kann.</p>
             </div>
         </div>
+        <hr width="100%" size="2" color="#E8E8E8 ">
+        <div class="part2">
+            <div class="text2">
+                <p style="color: #333333;">
+                    <strong>Noch Fragen? <br></strong>
+                </p>
+                <div class="emiailtext">
+                    <img src="./img/email.png" style="width: 21px;height: 21px;">
+                    <p class="service">
+                        service@
+                    </p>
+                </div>
 
-        <img src="./img/left_arrow.png" style="height:110px;margin-top:7%;float:right">
-        <!--模块6负责的同学-->
-
-        <div class="story-element--text-wrapper">
-
-            <h2 class="story-element--content-headline">
-                <p style="font-size: 16px; width:150px;float:right;margin-left: 5%;
-                     margin-top: 200px;">UNSER KONZEPT
-            </h2>
-            <div class="story-element--content-text">
-                <p style="font-size: 14px;text-align:right;color: #545454;margin-right: 20px;">
-                    <br><br><br> <br><br><br><br> <br><br><br><br> <br><br>Unsere Rezepte sind frei von <br> Getreide, Mais, Weizen und<br> Soja. Zutaten, die<br> Nahrungsmittelempfindlichkeiten
-                    <br>verursachen werden von uns <br>nicht verwendet. Wir glauben <img src="./img/deer.png" style="margin-top: 10px;float:left;" width="30%"> <br>nicht an die Verwendung von
-                    <br>Füllstoffen - wir denken, dass <br>
-                    <strong>jede Zutat einen <br> ernährungsphysiologischen <br>und funktionellen Zweck<br></strong> haben sollte. Da wir der Meinung <br>sind, dass jede Zutat einen <br>Zweck haben sollte - und einen,<br> der für unsere Haustiere von
-                    <br>Vorteil ist -, entscheiden wir <br>uns,
-                    <strong>keine künstlichen <br>Farbstoffe</strong> in unsere <br>Lebensmittel aufzunehmen. Wir
-                    <br>bleiben lieber bei dem, was <br>
-                    <strong>ganz natürlich</strong> ist. Und absolut <br>notwendig.</p>
-            
+                <p>
+                    schmidtskatze.com
+                </p>
             </div>
-        </div>
-
-
-        <div >
-    
-            <head>
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <title>footer</title>
-                <link rel="stylesheet" href="./css/footer.css">
-            </head>
-            
-                <hr  width="100%" size="2" color="#E8E8E8 ">
-                <div class="part1">
-                   <div class="text1">
-                       <p>
-                          <br> <strong>Folge uns</strong>
-                       </p>
-                   </div>
-                   <div class="advertisement">
-                       <img src="./img/facebook1.png" class="p1" style="width: 43px;height: 43px;">
-                       <img src="./img/ins.png" class="p2" style="width: 43px;height: 43px;">
-            
-                   </div>
-                </div>
-                <hr  width="100%" size="2" color="#E8E8E8 ">
-                <div class="part2">
-                    <div class="text2">
-                        <p style="color: #333333;">
-                            <strong>Noch Fragen? <br></strong> 
-                        </p>
-                       <div class="emiailtext">
-                        <img src="./img/email.png" style="width: 21px;height: 21px;">
-                        <p class="service">
-                             service@ 
-                        </p>
-                       </div>
-                        
-                            <p>
-                                schmidtskatze.com
-                            </p>
-                    </div>
-                    <div class="p3">
-                     <img src="./img/handcat.png" style="width: 63px;height: 95px;">
-                    </div>
-                    
-                </div>
-                <hr  width="100%" size="2" color="#E8E8E8 ">
-                <div class="part3">
-                    <div>
-                        <a href="./DataProtection.html"><p >
-                            Datenschutzerklärung
-                        </p></a>
-                    </div>
-                    <div>
-                        <a href="./company.html"><p >
-                            Impressum
-                        </p></a>
-                    </div>
-            
-                </div>
-            
+            <div class="p3">
+                <img src="./img/handcat.png" style="width: 63px;height: 95px;">
             </div>
-            <br>
-            
-        <!--模块7负责的同学-->
-        <div id="modelSeven">
 
         </div>
-        <!--模块8负责的同学-->
-        <div id="modelEight">
+        <hr width="100%" size="2" color="#E8E8E8 ">
+        <div class="part3">
+            <div>
+                <a href="./DataProtection.html">
+                    <p>
+                        Datenschutzerklärung
+                    </p>
+                </a>
+            </div>
+            <div>
+                <a href="./company.html">
+                    <p>
+                        Impressum
+                    </p>
+                </a>
+            </div>
 
         </div>
-        <!--模块9负责的同学-->
-        <div id="modelNine">
 
-        </div>
-        <!--模块10负责的同学-->
-        <div id="modelTen">
+    </div>
+    <br>
 
-        </div>
-        <!--模块11负责的同学-->
-        <div id="modelEle">
+    <!--模块7负责的同学-->
+    <div id="modelSeven">
 
-        </div>
-        <!--模块12负责的同学-->
-        <div id="modelTwe">
+    </div>
+    <!--模块8负责的同学-->
+    <div id="modelEight">
 
-        </div>
+    </div>
+    <!--模块9负责的同学-->
+    <div id="modelNine">
+
+    </div>
+    <!--模块10负责的同学-->
+    <div id="modelTen">
+
+    </div>
+    <!--模块11负责的同学-->
+    <div id="modelEle">
+
+    </div>
+    <!--模块12负责的同学-->
+    <div id="modelTwe">
+
+    </div>
     </div>
 </body>
 
