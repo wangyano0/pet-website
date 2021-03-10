@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/chicken.css">
+    <title>chicken</title>
+    
+</head>
+
+
+<body leftmargin=0 topmargin=0>
+    <div class="container">
+        <a href="./ProductInformation.html">
+      <img src="img/return1.png" style="height: 36px;float: left;">
+        
+    </a>
+      <img src="img/2 title one.png" style="height:25px;width:large;">
+      <img src="./img/2 title two.png" style="height: 40px;">
+       <img src="img/2 picture.png" style="height: 370px;">
+
+       <div class="m1">
+        <p>Beim gezielten Füttern geht es darum, genau</p>
+            <p>zu wissen, was deine Katze frisst - echte,</p>
+            <p>erkennbare Zutaten, die du kennst und denen</p>
+            <p>du vertraust. Die Komposition aus Hühnchen,</p>
+            <p>Entenherzen und Pute liefert hochwertige </p>
+            <p>Proteine und ist elementar für eine </p>
+            <p>artgerechte Ernährung. Daher ist </p>
+            <p>beispielsweise Entenherz insbesondere für</p>
+            <p> ernährungssensible Katzen  appetitlich.</p>
+        </div>
+
+        <img src="img/line.png" style="width:400px;margin-top: 50px">
+
+        <div class="m2">
+        <p >Zusammensetzung</p>
+        </div>
+
+        <div class="m3">
+            <p>Fleisch und tierische Nebener-zeugnisse(50%</p>
+                <p>Huhn, 10% Entenherzen, 10% Pute) und </p>
+                <p>Mineralstoffe</p>
+            </div>
+    
+
+            <table> <tr><td>
+            <p style="font-size: 16px;margin-left: 20px;margin-top: 20px">Zusatzstoffe per kg<br>Ernährungsphysiologische<br>Zusatzstoffe</p>
+            </td>
+             <td>    
+            <div id="btn1"><img src="./img/arrow.png" style="height:7px;margin-left:160px;margin-top: 20px"></div>
+            </td>
+            </tr>
+            </table>
+            <div id="menu1">
+                <img src="./img/2 list1.png" style="height: 500px;margin-left:7%">
+            </div>
+           
+
+            
+            <table> <tr><td>
+            <p style="font-size: 16px;margin-left: 20px;margin-top: 20px">Analytische Bestandteile</p>
+            </td>
+            <td>
+             <div id="btn2"><img src="./img/arrow.png" style="height:7px;margin-left: 173px;margin-top: 20px"></div>
+            </td>
+            </tr>
+            </table>
+            <div id="menu2">
+                <img src="./img/2 list2.png" style="height: 160px;margin-left:7%">
+            </div>
+           
+
+           
+            <table> <tr><td>
+                <p style="font-size: 16px;margin-left: 20px;margin-top: 20px">Fütterungsempfehlung/Tag</p>
+            </td>
+            <td>
+            <div id="btn3"><img src="./img/arrow.png" style="height:7px;margin-left: 148px;margin-top: 20px"></div>
+            </td>
+            </tr>
+            </table>
+                <div id="menu3">
+                    <img src="./img/2 list3.png" style="height: 140px;margin-left:7%">
+                </div>
+                <div>
+                    <iframe src="fooer.html" width="100%" height="400px"frameborder="0"scrolling="no"style="margin-top: 30px"></iframe>
+                </div>
+    </div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script>
+    $(function() {
+        $("#btn1").click(function() {
+            $("#menu1").toggle();
+        });
+        $("#btn2").click(function() {
+            $("#menu2").toggle();
+        });
+        $("#btn3").click(function() {
+            $("#menu3").toggle();
+        });
+    })
+
+    var num = 0;
+    var num1 = 0;
+    var num2 = 0;
+
+    $(document).on("click", "#btn1", function() {
+        num = (num + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num + "deg)"); //三角形旋转
+
+    })
+    $(document).on("click", "#btn2", function() {
+        num1 = (num1 + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num1 + "deg)"); //三角形旋转
+    })
+    $(document).on("click", "#btn3", function() {
+        num2 = (num2 + 180) % 360; //旋转180度
+        $(this).children().css("transform", "rotate(" + num2 + "deg)"); //三角形旋转      
+    })
+</script>
+
+
+</html>
