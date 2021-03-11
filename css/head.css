@@ -25,15 +25,15 @@
    width: 50px;
 }
 
-.p1{
-transform: translateX(-80px);
+.hp1{
+
 margin-top: 10px;
 }
 
 
- .p2{
-    width: 10%;
-    transform: translateX(22px);
+ .hp2{
+    
+    transform: translateX(-19px);
     margin-top: 11px;
 }
 
