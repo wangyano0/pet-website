@@ -88,42 +88,107 @@
                     <img src="./img/1 list3.png" style="height: 140px;margin-left:7%">
                 </div>
                 <div>
-                    <iframe src="fooer.html" width="100%" height="400px"frameborder="0"scrolling="no"style="margin-top: 30px"></iframe>
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+                        <title>footer</title>
+                        <link rel="stylesheet" href="./css/footer.css">
+                    </head>
+        
+                    <hr width="100%" size="2" color="#E8E8E8 ">
+                    <div class="part1">
+                        <div class="text1">
+                            <p>
+                                <br> <strong>Folge uns</strong>
+                            </p>
+                        </div>
+                        <div class="advertisement">
+                            <img src="./img/facebook1.png" class="p1" style="width: 43px;height: 43px;">
+                            <img src="./img/ins.png" class="p2" style="width: 43px;height: 43px;">
+        
+                        </div>
+                    </div>
+                    <hr width="100%" size="2" color="#E8E8E8 ">
+                    <div class="part2">
+                        <div class="text2">
+                            <p style="color: #333333;">
+                                <strong>Noch Fragen? <br></strong>
+                            </p>
+                            <div class="emiailtext">
+                                <img src="./img/email.png" style="width: 21px;height: 21px;">
+                                <p class="service">
+                                    service@
+                                </p>
+                            </div>
+        
+                            <p>
+                                schmidtskatze.com
+                            </p>
+                        </div>
+                        <div class="p3">
+                            <img src="./img/handcat.png" style="width: 63px;height: 95px;">
+                        </div>
+        
+                    </div>
+                    <hr width="100%" size="2" color="#E8E8E8 ">
+                    <div class="part3">
+                        <div>
+                            <a href="./DataProtection.html">
+                                <p>
+                                    Datenschutzerklärung
+                                </p>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="./company.html">
+                                <p>
+                                    Impressum
+                                </p>
+                            </a>
+                        </div>
+        
+                    </div>
+        
+        
+        
                 </div>
-    </div>
-</body>
-<script src="./js/jquery.min.js"></script>
-<script>
-    $(function() {
-        $("#btn1").click(function() {
-            $("#menu1").toggle();
-        });
-        $("#btn2").click(function() {
-            $("#menu2").toggle();
-        });
-        $("#btn3").click(function() {
-            $("#menu3").toggle();
-        });
-    })
-
-    var num = 0;
-    var num1 = 0;
-    var num2 = 0;
-
-    $(document).on("click", "#btn1", function() {
-        num = (num + 180) % 360; //旋转180度
-        $(this).children().css("transform", "rotate(" + num + "deg)"); //三角形旋转
-
-    })
-    $(document).on("click", "#btn2", function() {
-        num1 = (num1 + 180) % 360; //旋转180度
-        $(this).children().css("transform", "rotate(" + num1 + "deg)"); //三角形旋转
-    })
-    $(document).on("click", "#btn3", function() {
-        num2 = (num2 + 180) % 360; //旋转180度
-        $(this).children().css("transform", "rotate(" + num2 + "deg)"); //三角形旋转      
-    })
-</script>
-
-
-</html>
+        
+            </div>
+        
+        </body>
+        <script src="./js/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $("#btn1").click(function() {
+                    $("#menu1").toggle();
+                });
+                $("#btn2").click(function() {
+                    $("#menu2").toggle();
+                });
+                $("#btn3").click(function() {
+                    $("#menu3").toggle();
+                });
+            })
+        
+            var num = 0;
+            var num1 = 0;
+            var num2 = 0;
+        
+            $(document).on("click", "#btn1", function() {
+                num = (num + 180) % 360;
+                $(this).children().css("transform", "rotate(" + num + "deg)");
+        
+            })
+            $(document).on("click", "#btn2", function() {
+                num1 = (num1 + 180) % 360;
+                $(this).children().css("transform", "rotate(" + num1 + "deg)");
+            })
+            $(document).on("click", "#btn3", function() {
+                num2 = (num2 + 180) % 360;
+                $(this).children().css("transform", "rotate(" + num2 + "deg)");
+            })
+        </script>
+        
+        </html>
