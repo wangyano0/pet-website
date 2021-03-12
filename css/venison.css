@@ -1,7 +1,6 @@
 .body {
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
 .header {
@@ -30,16 +29,16 @@
 }
 
 .firstbox2 {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     color: rgb(103, 105, 107);
     font-size: 14px;
     line-height: 35px;
 }
 
 .firstbox3 {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 67px;
     color: rgb(103, 105, 107);
     font-size: 14px;
@@ -59,6 +58,7 @@
 .fourthbox3 {
     margin-top: 100px;
     margin-left: 67px;
+    margin-bottom: 100px;
 }
 
 .box4 {

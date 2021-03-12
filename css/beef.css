@@ -30,9 +30,9 @@
 }
 
 .firstbox2 {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     color: rgb(103, 105, 107);
     font-size: 14px;
     line-height: 35px;
@@ -43,7 +43,7 @@
     margin-left: 67px;
     color: rgb(103, 105, 107);
     font-size: 14px;
-    line-height: 15px;
+    line-height: 35px;
 }
 
 .secondbox3 {
