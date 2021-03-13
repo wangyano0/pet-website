@@ -27,7 +27,7 @@
     font-size: 16px;
     text-align: left;
     font-family: PingFangSC-regular;
-    color: #7b7b7b;
+    color: #444444;
     line-height: 19px;
     margin-top: 10px;
 }
@@ -46,7 +46,7 @@
 }
 
 .part1 .across2 .arrow2 {
-    margin-left: 10px;
+    
     margin-top: 60px;
     transform: translateX(30px);
 }
@@ -57,12 +57,12 @@
     text-align: right;
     font-size: 14px;
     font-family: PingFangSC-regular;
-    color: #7b7b7b;
+    color: #444444;
     margin-bottom: 65px;
 }
 
 strong {
-    font-size: 16px;
+    
 }
 
 .part1 .wheelp .swiper-container .swiper-wrapper .swiper-slide {
